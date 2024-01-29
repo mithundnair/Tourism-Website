@@ -1,0 +1,240 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Destination</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+
+        .rating {
+            font-size: 24px;
+        }
+
+        .rating label {
+            display: inline-block;
+            color: #ffcc00; /* Set the color based on the desired rating */
+            margin: 0 5px;
+        }
+
+        #half-star::before {
+            content: '\00BD'; /* Unicode character for a half star */
+            color: gold; /* Adjust the color as needed */
+            font-size: 24px;
+        }
+
+
+    </style>
+
+
+
+
+</head>
+<body>
+
+<div class="nav">
+    <div class="container-fluid">
+        <header class="d-flex justify-content-center py-3 bg-dark">
+          <ul class="nav nav-pills">
+
+            <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="#places" class="nav-link">Places</a></li>
+            <li class="nav-item"><a href="packages.html" class="nav-link">Package</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact us</a></li>
+          </ul>
+        </header>
+    </div>
+</div>
+
+<div class="carousel">
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/images/img2.jpg" class="d-block w-100" style="height: 700px;" alt="gods">
+          </div>
+          <div class="carousel-item">
+            <img src="/images/img1.jpg" class="d-block w-100" style="height: 700px;" alt="own">
+          </div>
+          <div class="carousel-item">
+            <img src="/images/img3.jpg" class="d-block w-100" style="height: 700px;" alt="country">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
+
+<section id="places">
+    <div class="row">
+        <h2 class="title text-center mt-5">Places You Must Visit</h2>
+      <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card mt-5 ms-5" style="width: 18rem;">
+                <img src="/images/Jatayu.jpg" class="card-img-top" alt="jatayu">
+                <div class="card-body">
+                  <h5 class="card-title">Jatayu Earth's Center</h5>
+                  <p class="card-text">Jatayu Earth Center, also known as Jatayu Nature Park or Jatayu Rock, is a park and tourism centre at Chadayamangalam in Kollam district of Kerala, India. It stands at an altitude of 350m above the mean sea level.</p>
+                  <div class="rating">
+                    <label for="star4">&#9733;</label>
+                    <label for="star3">&#9733;</label>
+                    <label for="star2">&#9733;</label>
+                    <label for="star1">&#9733;</label>
+                </div>
+                </div>
+              </div>
+        </div>
+
+    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+        <div class="card mt-5 ms-5" style="width: 18rem;">
+            <img src="/images/padmanabhan.jpg" class="card-img-top" alt="jatayu">
+            <div class="card-body">
+              <h5 class="card-title">Padmanabhaswamy Temple</h5>
+              <p class="card-text">The Padmanabhaswamy Temple is a Hindu temple, dedicated to Vishnu, in Thiruvananthapuram. Only those who profess the Hindu faith are permitted entry to the temple. It is widely considered as the world's richest Hindu temple. </p>
+              <div class="rating">
+                <label for="star5">&#9733</label>
+                <label for="star4">&#9733;</label>
+                <label for="star3">&#9733;</label>
+                <label for="star2">&#9733;</label>
+                <label for="star1">&#9733;</label>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+        <div class="card mt-5 ms-5" style="width: 18rem;">
+            <img src="/images/museum.jpg" class="card-img-top" alt="jatayu">
+            <div class="card-body">
+              <h5 class="card-title">Napier Museum</h5>
+              <p class="card-text">The Napier Museum is an art and natural history museum situated in Thiruvananthapuram. The Museum is grounds to the Trivandrum Zoo, one of the oldest zoological gardens in India. The zoo was established in 1857.</p>
+              <div class="rating">
+                <label for="star5">&#9733</label>
+                <label for="star4">&#9733;</label>
+                <label for="star3">&#9733;</label>
+                <label for="star2">&#9733;</label>
+                <label for="star1">&#9733;</label>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+        <div class="card mt-5 ms-5" style="width: 18rem;">
+            <img src="/images/ponmudi.jpg" class="card-img-top" alt="jatayu">
+            <div class="card-body">
+              <h5 class="card-title">Ponmudi Station Hills</h5>
+              <p class="card-text">Ponmudi is a hill station in the Peringamala gramapanchayath Trivandrum. Located 22km west of Vithura, 53km north-east of Tvm, 78km south-east of Varkala town and 69km north-east of Kovalam Beach at an altitude of 1100 m.</p>
+              <div class="rating">
+                <label for="star4">&#9733;</label>
+                <label for="star3">&#9733;</label>
+                <label for="star2">&#9733;</label>
+                <label for="star1">&#9733;</label>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+        <div class="card mt-5 ms-5" style="width: 18rem;">
+            <img src="/images/shankumugham.jpg" class="card-img-top" alt="jatayu">
+            <div class="card-body">
+              <h5 class="card-title">Shankumugham Beach</h5>
+              <p class="card-text">Shankumugham Beach is a beach in Thiruvananthapuram district of Kerala, south India. The beach is on the western side of Thiruvananthapuram and is very close to Trivandrum International Airport. </p>
+              <div class="rating">
+                <label for="star5">&#9733;</label>
+                <label for="star4">&#9733;</label>
+                <label for="star3">&#9733;</label>
+                <label for="star2">&#9733;</label>
+                <label for="star1">&#9733;</label>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+        <div class="card mt-5 ms-5" style="width: 18rem;">
+            <img src="https://static.toiimg.com/photo/48681548.cms" class="card-img-top" alt="jatayu">
+            <div class="card-body">
+              <h5 class="card-title">Kovalam Beach</h5>
+              <p class="card-text">Kovalam is the most famous beach spot of Kerala. It is located 16 km away from Thiruvananthapuram. This small and beautiful village was established as a tourist spot after the discovery of three fabulous beaches.</p>
+              <div class="rating">
+                <label for="star5">&#9733;</label>
+                <label for="star4">&#9733;</label>
+                <label for="star3">&#9733;</label>
+                <label for="star2">&#9733;</label>
+                <label for="star1">&#9733;</label>
+            </div>
+              </div>
+        </div>
+    </div>
+
+
+    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+      <div class="card mt-5 ms-5" style="width: 18rem;">
+          <img src="/images/veli.jpg" class="card-img-top" alt="jatayu">
+          <div class="card-body">
+            <h5 class="card-title">Veli Tourist Village</h5>
+            <p class="card-text">The Veli Tourist Village which lies where the Veli Lake meets the Arabian Sea provides for unique boating and picnicking opportunities. Visitors can hire pedal boats or paddleboats as per their convenience.</p>
+            <div class="rating">
+              
+              <label for="star4">&#9733;</label>
+              <label for="star3">&#9733;</label>
+              <label for="star2">&#9733;</label>
+              <label for="star1">&#9733;</label>
+          </div>
+            </div>
+      </div>
+  </div>
+
+
+    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+      <div class="card mt-5 ms-5" style="width: 18rem;">
+          <img src="/images/kanakakunnu.jpg" class="card-img-top" alt="jatayu">
+          <div class="card-body">
+            <h5 class="card-title">Kanakakkunnu Palace</h5>
+            <p class="card-text">The Kanakakunnu palace located at the heart of Thiruvananthapuram city. Its proximity to a number of important tourist sites, including the Napier Museum and Trivandrum Zoo, has made it an important part of the city.</p>
+            <div class="rating">
+              <label for="star5">&#9733;</label>
+              <label for="star4">&#9733;</label>
+              <label for="star3">&#9733;</label>
+              <label for="star2">&#9733;</label>
+              <label for="star1">&#9733;</label>
+          </div>
+            </div>
+      </div>
+  </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
