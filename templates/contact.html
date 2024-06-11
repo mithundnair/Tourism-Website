@@ -4,8 +4,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
+
+
+        @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
 
         body{
             background-image: url(/images/contactbg.jpg);
@@ -16,6 +21,20 @@
 
         .row{
             opacity: 0.9;
+        }
+
+        .cont{
+            font-family: "Teko", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-size: 2rem;
+        }
+
+        .form-label{
+            font-family: "Teko", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-size: 1.5rem;
         }
     </style>
 </head>
@@ -46,32 +65,32 @@
                     <section class="contact">
                         <div class="container">
                             <div class="row p-5 ">
-                                <h1 class="text-center ">Contact Us</h1>
+                                <h1 class="cont text-lg font-bold text-center ">Contact Us</h1>
                                 <form class="row g-3" method="POST"><input type="hidden" name="form-name" value="form 1">
                                     <!-- {% csrf_token %} -->
                                     <div class="col-md-6">
-                                      <label for="Fname" class="form-label">First Name</label>
+                                      <label for="Fname" class="form-label"><strong>First Name</strong></label>
                                       <input type="text" class="form-control" id="Fname">
                                     </div>
                                     <div class="col-md-6">
-                                      <label for="Lname" class="form-label">Last Name</label>
+                                      <label for="Lname" class="form-label"><strong>Last Name</strong></label>
                                       <input type="text" class="form-control" id="Lname">
                                     </div>
                                     <div class="col-md-6">
-                                      <label for="email" class="form-label">Email</label>
+                                      <label for="email" class="form-label"><strong>Email</strong></label>
                                       <input type="email" class="form-control" id="ymail">
                                     </div>
                                     <div class="col-md-6">
-                                      <label for="Number" class="form-label">Phone Number</label>
+                                      <label for="Number" class="form-label"><strong>Phone Number</strong></label>
                                       <input type="tel" class="form-control" id="ymob">
                                     </div>
                         
                         <div class="col-12">
-                            <label for="inputAddress" class="form-label mt-4">Message</label>
+                            <label for="inputAddress" class="form-label mt-4"><strong>Message</strong></label>
                           </div>
-                          <textarea class="form-label mt-3 ms-2  cols="30" rows="10" placeholder="Write Something.."></textarea>
+                          <textarea class="form-label mt-3 ms-2  cols="30" rows="10" placeholder= "Write Something.."></textarea>
                         <div class="col-12">
-                            <button class="btn btn-dark ms-2" style="width: 100%;" onclick="submit()">Submit</button>
+                            <button class="btn btn-dark ms-2" style="width: 100%;" onclick="submit()"><strong>Submit</strong></button>
                         </div>
                                         </form>
                                         </div>
@@ -80,6 +99,33 @@
                             </div>
                         </form>
                     </section>
+
+                    <!-- TESTING -->
+
+                    <div class="container mx-auto p-4">
+                        <div class="grid grid-cols-12 gap-4">
+                            <div class="col-span-3 bg-white rounded-lg shadow-lg p-6">
+                                <h2 class="text-xl font-bold mb-2">Card Title 1</h2>
+                                <p class="text-gray-700 mb-4">This is a description of the card content. It provides some information about the item.</p>
+                                <a href="#" class="text-blue-500 hover:text-blue-700">Read more</a>
+                            </div>
+                            <div class="col-span-3 bg-white rounded-lg shadow-lg p-6">
+                                <h2 class="text-xl font-bold mb-2">Card Title 2</h2>
+                                <p class="text-gray-700 mb-4">This is another description of the card content. It provides additional information about the item.</p>
+                                <a href="#" class="text-blue-500 hover:text-blue-700">Read more</a>
+                            </div>
+                            <div class="col-span-3 bg-white rounded-lg shadow-lg p-6">
+                                <h2 class="text-xl font-bold mb-2">Card Title 3</h2>
+                                <p class="text-gray-700 mb-4">This is a third description of the card content. It gives more details about the item.</p>
+                                <a href="#" class="text-blue-500 hover:text-blue-700">Read more</a>
+                            </div>
+                            <div class="col-span-3 bg-white rounded-lg shadow-lg p-6">
+                                <h2 class="text-xl font-bold mb-2">Card Title 4</h2>
+                                <p class="text-gray-700 mb-4">This is a fourth description of the card content. It gives more details about the item.</p>
+                                <a href="#" class="text-blue-500 hover:text-blue-700">Read more</a>
+                            </div>
+                        </div>
+                    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 

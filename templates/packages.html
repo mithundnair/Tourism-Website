@@ -4,8 +4,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Packages</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Acme&family=Catamaran:wght@100..900&display=swap');
 
         .title{
             background-color: #eee;
@@ -24,15 +27,28 @@
             display: block;
         }
 
+        .info{
+            font-family: "Catamaran", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+
+        .know{
+            font-family: "Acme", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 1.5rem;
+        }
+
     </style>
 </head>
-<body>
+<body class="body bg-gray-100">
 
-        <div class="container-">
+        <div class="container-fluid">
             <header class="d-flex justify-content-center py-3 bg-dark">
               <ul class="nav nav-pills">
     
-                <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link" aria-current="page">Home</a></li>
                 <li class="nav-item"><a href="packages.html" class="nav-link">Package</a></li>
                 <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
                 <li class="nav-item"><a href="contact.html" class="nav-link">Contact us</a></li>
@@ -40,15 +56,15 @@
             </header>
         </div>
 
-            <div class="container-">
-                <h1 class="title text-center mt-3 py-5">TRIVANDRUM TOUR PACKAGES</h1>
+            <div class="container-fluid bg-gray-500">
+                <h1 class="title text-lg font-bold text-center mt-3 py-4">TRIVANDRUM TOUR PACKAGES</h1>
             </div>
 
-            <h3 class="stitle mt-4 ms-3">PACKAGE 1</h3>
+            <h3 class="stitle font-bold m-4 ms-3">PACKAGE 1</h3>
             <hr>
 
-            <div class="container-">
-                <h2 class="title text-center mt-3 py-4">4 DAYS AND 3 NIGHTS</h2>
+            <div class="container-fluid">
+                <h2 class="title text-4x1 font-bold text-center mt-3 py-4">4 DAYS AND 3 NIGHTS</h2>
                 <p class="route text-center"><strong>TRIVANDRUM | AZHIMALA SIVA TEMPLE | KOVALAM BEACH</strong></p>
             </div>
 
@@ -56,14 +72,122 @@
                 <div class="row">
                     <div class="col-md-5 col-xs-12">
                         <img src="/images/aazhimala.png" class="img-responsive fill">
-                        <p class="text-center">AZHIMALA TEMPLE</p>
+                        <p class="font-bold text-center">AZHIMALA TEMPLE</p>
                     </div>
 
                     <div class="col-md-7 col-xs-12">
-                        <h5 class="titles ms-4">DAY 01: AZHIMALA TEMPLE</h5>
+                        <h5 class="titles font-bold ms-4">DAY 01: ARRIVAL IN TRIVANDRUM</h5>
+                        <p class="para">
+                            <ul class="list-disc list-inside mt-1">
+                                <li class="info text-lg ms-4">Arriving at Trivandrum Airport/station and you will be escorted to your hotel</li>
+                                <li class="info text-lg ms-4">After freshning up you will be contacted by our guide for sighseeing</li>
+                                <li class="info text-lg ms-4">Visit Napier Museum, Art gallery and kanakakunnu palace</li>
+                                <li class="info text-lg ms-4">A tour to Trivandrum Zoo followed by Lunch</li>
+                                <li class="info text-lg ms-4">Later in evening, visit Padmanabhaswamy Temple</li>
+                                <li class="info text-lg ms-4">Dinner at hotel and overnight stay</li>
+                            </ul>
+                        </p>
+                        <h5 class="titles font-bold ms-4 mt-3">DAY 02: OFF TO AZHIMALA TEMPLE</h5>
+                        <p class="para">
+                            <ul class="list-disc list-inside mt-1">
+                                <li class="info text-lg ms-4">Pick up at hotel by morning 5:00 am</li>
+                                <li class="info text-lg ms-4">Journey starts and reaches destination by about 6:15(approximate)</li>
+                                <li class="info text-lg ms-4">While returning a stop at Azhimala cliff and beach</li>
+                                <li class="info text-lg ms-4">After lunch a visit to Lulu mall for shopping</li>
+                                <li class="info text-lg ms-4">Returning to hotel by night</li>
+                                <li class="info text-lg ms-4">Dinner at hotel and overnight stay</li>
+                            </ul>
+                        </p>
+                        <h5 class="titles font-bold ms-4 mt-3">DAY 03: OFF TO KOVALAM</h5>
+                        <p class="para">
+                            <ul class="list-disc list-inside mt-1">
+                                <li class="info text-lg ms-4">Pick up at hotel by morning 7:30 am</li>
+                                <li class="info text-lg ms-4">Journey starts and ends by 8:30(aaproximate)</li>
+                                <li class="info text-lg ms-4">Visit kovalam art gallery and rock cave temple</li>
+                                <li class="info text-lg ms-4">After lunch a visit to halcyon castle at kovalam</li>
+                                <li class="info text-lg ms-4">At evening sightseeing in beaches(Kovalam Beach, Samudra Beach, Grove Beach)</li>
+                                <li class="info text-lg ms-4">Returning to hotel by 10:00 pm</li>
+                                <li class="info text-lg ms-4">Dinner at hotel and overnight stay</li>
+                            </ul>
+                        </p>
+                        <h5 class="titles font-bold ms-4 mt-3">DAY 04: DEPARTURE</h5>
+                        <p class="para">
+                            <ul class="list-disc list-inside mt-1">
+                                <li class="info text-lg ms-4">Pick up at hotel on next morning according to your flight/train reservations</li>
+                                <li class="info text-lg ms-4">Droping you at the airport/station for your onward journey back    Home</li>
+                            </ul>
+                        </p>
                     </div>
                 </div>
             </div>
+
+            <hr>
+            <h3 class="know text-lg text-center font-bold mt-3">SIMILAR PACKAGES WITH SAME DURATION</h3>
+
+            <div class="grid grid-row-3">
+                <div class="card ml-16 mb-8 mt-4" style="width: 18rem; background-color: #f0f0f0; padding: 1rem;">
+                    <img src="/images/kanyakumari.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title font-bold">Trivandrum, Kovalam and Kanyakumari</h5>
+                      <p class="card-text-lg"></p>
+                      <span class="dur text-lg font-medium">4 Days 3 Nights</span>
+                      <span class="text-red-500 line-through mr-2">₹ 12,499</span>
+                      <span class="offer text-lg bg-warning font-bold">20% off</span>
+                      <span class="text-green-500 text-lg font-bold ml-2">₹ 9,999</span>
+                      </p>
+                      <a href="#" class="btn btn-primary mt-3">KNOW MORE</a>
+                    </div>
+                  </div>
+                <div class="card ml-16 mb-8 mt-4" style="width: 18rem; background-color: #f0f0f0; padding: 1rem;">
+                    <img src="/images/rameswaram.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title font-bold">Trivandrum, Kanyakumari, Rameswaram and Madurai</h5>
+                      <p class="card-text-lg"></p>
+                      <span class="dur text-lg font-medium">5 Days 4 Nights</span>
+                      <span class="text-red-500 line-through mr-2">₹ 20,499</span>
+                      <span class="offer text-lg bg-warning font-bold">20% off</span>
+                      <span class="text-green-500 text-lg font-bold">₹ 16,900</span>
+                      </p>
+                      <a href="#" class="btn btn-primary mt-3">KNOW MORE</a>
+                    </div>
+                  </div>
+                <div class="card ml-16 mb-8 mt-4" style="width: 18rem; background-color: #f0f0f0; padding: 1rem;">
+                    <img src="/images/Tirupati.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title font-bold">Panoramic tour of south from TVM To Tirupati</h5>
+                      <p class="card-text-lg"></p>
+                      <span class="dur text-lg font-medium">6 Days 5 Nights</span>
+                      <span class="text-red-500 line-through mr-2">₹ 36,499</span>
+                      <span class="offer text-lg bg-warning font-bold">20% off</span>
+                      <span class="text-green-500 text-lg font-bold">₹ 29,200</span>
+                      </p>
+                      <a href="#" class="btn btn-primary mt-3">KNOW MORE</a>
+                    </div>
+                  </div>
+                <div class="card ml-16 mb-8 mt-4" style="width: 18rem; background-color: #f0f0f0; padding: 1rem;">
+                    <img src="/images/wonderfulkerala.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title font-bold">Wonderful Kerala Group Tour Package</h5>
+                      <p class="card-text-lg"></p>
+                      <span class="dur text-lg font-medium">9 Days 8 Nights</span>
+                      <span class="text-red-500 line-through mr-2">₹ 42,999</span>
+                      <span class="offer text-lg bg-warning font-bold">20% off</span>
+                      <span class="text-green-500 text-lg font-bold">₹ 34,400</span>
+                      </p>
+                      <a href="#" class="btn btn-primary mt-3">KNOW MORE</a>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="grid grid-cols-4 gap-4">
+                <div class="bg-gray-200 p-4">Item 1</div>
+                <div class="bg-gray-300 p-4">Item 2</div>
+                <div class="bg-gray-400 p-4">Item 3</div>
+                <div class="bg-gray-500 p-4">Item 4</div>
+                <div class="bg-gray-600 p-4">Item 5</div>
+                <div class="bg-gray-700 p-4">Item 6</div>
+            </div>
+            
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
