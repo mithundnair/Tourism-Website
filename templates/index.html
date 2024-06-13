@@ -30,24 +30,10 @@
 
 
 </head>
-<body class="body bg-gray-500">
+<body class="body bg-gray-100">
 
-<div class="nav">
-    <div class="container-fluid">
-        <header class="d-flex justify-content-center py-3 bg-dark">
-          <ul class="nav nav-pills">
-
-            <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Home</a></li>
-            <li class="nav-item"><a href="#places" class="nav-link">Places</a></li>
-            <li class="nav-item"><a href="packages.html" class="nav-link">Package</a></li>
-            <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
-            <li class="nav-item"><a href="contact.html" class="nav-link">Contact us</a></li>
-          </ul>
-        </header>
-    </div>
-</div>
-
-<div class="carousel">
+  
+  <div class="carousel">
     <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -69,16 +55,37 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-</div>
+    </div>
+    
+    <div class="container-fluid">
+      <header class="d-flex justify-content-center py-3 bg-dark fixed top-0 w-full z-50">
+        <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+  
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="#places" class="nav-link">Places</a></li>
+          <li><a href="packages.html" class="nav-link">Package</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+  
+        <div class="col-md-3 text-end">
+          <button type="button" class="btn btn-outline-primary me-2">Login</button>
+          <button type="button" class="btn btn-primary">Sign-up</button>
+        </div>
+      </header>
+    </div>
 
 <section id="places">
     <div class="row">
         <h2 class="title text-3xl font-bold text-center mt-4">Places You Must Visit</h2>
       <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-            <div class="card mt-5 ms-5" style="width: 18rem;">
+            <div class="card mt-5 ms-5 border-solid border-5 border-grey-500" style="width: 18rem;">
                 <img src="/images/Jatayu.jpg" class="card-img-top" alt="jatayu">
                 <div class="card-body">
-                  <h5 class="card-title">Jatayu Earth's Center</h5>
+                  <h5 class="card-title font-bold">Jatayu Earth's Center</h5>
                   <p class="card-text">Jatayu Earth Center, also known as Jatayu Nature Park or Jatayu Rock, is a park and tourism centre at Chadayamangalam in Kollam district of Kerala, India. It stands at an altitude of 350m above the mean sea level.</p>
                   <div class="rating">
                     <label for="star4">&#9733;</label>
@@ -91,10 +98,10 @@
         </div>
 
     <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-        <div class="card mt-5 ms-5" style="width: 18rem;">
+        <div class="card mt-5 ms-5 border-solid border-5 border-grey-500" style="width: 18rem;">
             <img src="/images/padmanabhan.jpg" class="card-img-top" alt="jatayu">
             <div class="card-body">
-              <h5 class="card-title">Padmanabhaswamy Temple</h5>
+              <h5 class="card-title font-bold">Padmanabhaswamy Temple</h5>
               <p class="card-text">The Padmanabhaswamy Temple is a Hindu temple, dedicated to Vishnu, in Thiruvananthapuram. Only those who profess the Hindu faith are permitted entry to the temple. It is widely considered as the world's richest Hindu temple. </p>
               <div class="rating">
                 <label for="star5">&#9733</label>
@@ -109,10 +116,10 @@
 
 
     <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-        <div class="card mt-5 ms-5" style="width: 18rem;">
+        <div class="card mt-5 ms-5 border-solid border-5 border-grey-500" style="width: 18rem;">
             <img src="/images/museum.jpg" class="card-img-top" alt="jatayu">
             <div class="card-body">
-              <h5 class="card-title">Napier Museum</h5>
+              <h5 class="card-title font-bold">Napier Museum</h5>
               <p class="card-text">The Napier Museum is an art and natural history museum situated in Thiruvananthapuram. The Museum is grounds to the Trivandrum Zoo, one of the oldest zoological gardens in India. The zoo was established in 1857.</p>
               <div class="rating">
                 <label for="star5">&#9733</label>
@@ -127,10 +134,10 @@
 
 
     <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-        <div class="card mt-5 ms-5" style="width: 18rem;">
+        <div class="card mt-5 ms-5 border-solid border-5 border-grey-500" style="width: 18rem;">
             <img src="/images/ponmudi.jpg" class="card-img-top" alt="jatayu">
             <div class="card-body">
-              <h5 class="card-title">Ponmudi Station Hills</h5>
+              <h5 class="card-title font-bold">Ponmudi Station Hills</h5>
               <p class="card-text">Ponmudi is a hill station in the Peringamala gramapanchayath Trivandrum. Located 22km west of Vithura, 53km north-east of Tvm, 78km south-east of Varkala town and 69km north-east of Kovalam Beach at an altitude of 1100 m.</p>
               <div class="rating">
                 <label for="star4">&#9733;</label>
@@ -144,10 +151,10 @@
 
 
     <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-        <div class="card mt-5 ms-5" style="width: 18rem;">
+        <div class="card mt-5 ms-5 border-solid border-5 border-grey-500" style="width: 18rem;">
             <img src="/images/shankumugham.jpg" class="card-img-top" alt="jatayu">
             <div class="card-body">
-              <h5 class="card-title">Shankumugham Beach</h5>
+              <h5 class="card-title font-bold">Shankumugham Beach</h5>
               <p class="card-text">Shankumugham Beach is a beach in Thiruvananthapuram district of Kerala, south India. The beach is on the western side of Thiruvananthapuram and is very close to Trivandrum International Airport. </p>
               <div class="rating">
                 <label for="star5">&#9733;</label>
@@ -162,10 +169,10 @@
 
 
     <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-        <div class="card mt-5 ms-5" style="width: 18rem;">
+        <div class="card mt-5 ms-5 border-solid border-5 border-grey-500" style="width: 18rem;">
             <img src="https://static.toiimg.com/photo/48681548.cms" class="card-img-top" alt="jatayu">
             <div class="card-body">
-              <h5 class="card-title">Kovalam Beach</h5>
+              <h5 class="card-title font-bold">Kovalam Beach</h5>
               <p class="card-text">Kovalam is the most famous beach spot of Kerala. It is located 16 km away from Thiruvananthapuram. This small and beautiful village was established as a tourist spot after the discovery of three fabulous beaches.</p>
               <div class="rating">
                 <label for="star5">&#9733;</label>
@@ -180,10 +187,10 @@
 
 
     <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-      <div class="card mt-5 ms-5" style="width: 18rem;">
+      <div class="card mt-5 ms-5 border-solid border-5 border-grey-500" style="width: 18rem;">
           <img src="/images/veli.jpg" class="card-img-top" alt="jatayu">
           <div class="card-body">
-            <h5 class="card-title">Veli Tourist Village</h5>
+            <h5 class="card-title font-bold">Veli Tourist Village</h5>
             <p class="card-text">The Veli Tourist Village which lies where the Veli Lake meets the Arabian Sea provides for unique boating and picnicking opportunities. Visitors can hire pedal boats or paddleboats as per their convenience.</p>
             <div class="rating">
               
@@ -198,10 +205,10 @@
 
 
     <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-      <div class="card mt-5 ms-5 mb-2" style="width: 18rem;">
+      <div class="card mt-5 ms-5 mb-2 border-solid border-5 border-grey-500" style="width: 18rem;">
           <img src="/images/kanakakunnu.jpg" class="card-img-top" alt="jatayu">
           <div class="card-body">
-            <h5 class="card-title">Kanakakkunnu Palace</h5>
+            <h5 class="card-title font-bold">Kanakakkunnu Palace</h5>
             <p class="card-text">The Kanakakunnu palace located at the heart of Thiruvananthapuram city. Its proximity to a number of important tourist sites, including the Napier Museum and Trivandrum Zoo, has made it an important part of the city.</p>
             <div class="rating">
               <label for="star5">&#9733;</label>
@@ -218,7 +225,7 @@
 </section>
 
 <hr>
-<div class="container">
+<div class="container-fluid bg-indigo-500">
   <footer class="py-3 my-4">
     <!-- <ul class="nav justify-content-center border-bottom pb-3 mb-3">
       <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"><strong>Home</strong></a></li>
@@ -227,7 +234,7 @@
       <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"><strong>FAQs</strong></a></li>
       <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"><strong>About</strong></a></li>
     </ul> -->
-    <p class="text-center text-body-secondary"><strong>© 2024 Company, Inc</strong></p>
+    <p class="text-center text-white"><strong>© 2024 Company, Inc</strong></p>
   </footer>
 </div>
 
