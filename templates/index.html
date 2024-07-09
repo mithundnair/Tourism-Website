@@ -5,6 +5,8 @@
     <title>Your Destination</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src = "/script/login.js"></script>
+
     <style>
 
         .rating {
@@ -63,7 +65,7 @@
           <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
         </a>
   
-        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0" id="navbar">
           <li><a href="index.html" class="nav-link">Home</a></li>
           <li><a href="#places" class="nav-link">Places</a></li>
           <li><a href="packages.html" class="nav-link">Package</a></li>
@@ -72,9 +74,12 @@
         </ul>
   
         <div class="col-md-3 text-end">
-          <button type="button" class="btn btn-outline-primary me-2">Login</button>
-          <button type="button" class="btn btn-primary">Sign-up</button>
+          <button type="button" class="btn btn-outline-primary me-2" onclick="window.location.href = 'login.html'" id="login-item" >Login</button>
+          <button type="button" class="btn btn-primary" onclick="window.location.href = 'signin.html'" id="sign-item">Sign-up</button>
         </div>
+        <ul id="right-nav" class="flex space-x-4">
+          <!-- Logout button will be appended here -->
+      </ul>
       </header>
     </div>
 
@@ -83,7 +88,7 @@
         <h2 class="title text-3xl font-bold text-center mt-4">Places You Must Visit</h2>
       <div class="col-12 col-md-6 col-lg-4 col-xl-3">
             <div class="card mt-5 ms-5 border-solid border-5 border-grey-500" style="width: 18rem;">
-                <img src="/images/Jatayu.jpg" class="card-img-top" alt="jatayu">
+                <a href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0TKowNa1MKiszYLRSNagwTjIwTUlJMU1NNEqyNLW0tDKoMDdPNDJJMTVLM020NEg2N_ASzkosSawsVUhNLCrJUEhOzSspSgUAO8QW7A&q=jatayu+earth+centre&rlz=1C1RXQR_enIN1034IN1034&oq=jatay&gs_lcrp=EgZjaHJvbWUqDQgCEC4YrwEYxwEYgAQyBggAEEUYOTIHCAEQABiABDINCAIQLhivARjHARiABDINCAMQLhivARjHARiABDIQCAQQLhivARjHARiABBiOBTIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDINCAkQLhivARjHARiABNIBCDIzOThqMGo3qAIIsAIB&sourceid=chrome&ie=UTF-8" target="_blank"><img src="/images/Jatayu.jpg" class="card-img-top" alt="jatayu"></a>
                 <div class="card-body">
                   <h5 class="card-title font-bold">Jatayu Earth's Center</h5>
                   <p class="card-text">Jatayu Earth Center, also known as Jatayu Nature Park or Jatayu Rock, is a park and tourism centre at Chadayamangalam in Kollam district of Kerala, India. It stands at an altitude of 350m above the mean sea level.</p>
@@ -99,7 +104,7 @@
 
     <div class="col-12 col-md-6 col-lg-4 col-xl-3">
         <div class="card mt-5 ms-5 border-solid border-5 border-grey-500" style="width: 18rem;">
-            <img src="/images/padmanabhan.jpg" class="card-img-top" alt="jatayu">
+            <a href="https://www.google.com/search?q=padmanabhaswamy+temple&sca_esv=e2999e5afe90a665&rlz=1C1RXQR_enIN1034IN1034&sxsrf=ADLYWIIW6kwnIUaoDIp_mtvn1wzVqVGwgw%3A1719499423904&ei=n3p9ZtXjNtPw4-EP3bKe-AQ&gs_ssp=eJzj4tTP1TcwTzPILjFgtFI1qDBOMjBNSjKwTDJPtTBMMTa1MqgwTDFKS01JMjcyNE40TE0z9xIrSEzJTcxLTMpILC5PzK1UKEnNLchJBQAXwBcd&oq=padm&gs_lp=Egxnd3Mtd2l6LXNlcnAaAhgDIgRwYWRtKgIIATIZEC4YgAQYQximAxjHARioAxiKBRiLAxivATIZEC4YgAQYQximAxjHARioAxiKBRiLAxivATIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBTIFEAAYgAQyChAAGIAEGEMYigUyChAAGIAEGEMYigUyBRAAGIAEMgUQABiABDIoEC4YgAQYQximAxjHARioAxiKBRiLAxivARiXBRjcBBjeBBjgBNgBAkj9NVDYAljTJXADeAGQAQSYAbEBoAHqDqoBBDAuMTO4AQPIAQD4AQGYAgugAqkkqAIPwgIKEAAYsAMY1gQYR8ICDRAAGIAEGLADGEMYigXCAhMQLhiABBiwAxhDGMgDGIoF2AEBwgIZEC4YgAQYsAMYQxjHARjIAxiKBRivAdgBAcICHBAuGIAEGLADGEMYxwEYyAMYigUYjgUYrwHYAQHCAhMQLhiABBjHARgnGIoFGI4FGK8BwgIKEAAYgAQYFBiHAsICIBAuGIAEGMcBGIoFGI4FGK8BGJcFGNwEGN4EGOAE2AECwgIQEC4YxwEYJxjqAhiOBRivAcICBxAjGCcY6gLCAgcQLhgnGOoCwgIQEC4YpAMYJxioAxjqAhiLA8ICGRAuGKYDGMcBGCcYqAMY6gIYiwMYjgUYrwHCAgoQIxgnGOoCGIsDwgIWEC4YgAQYQxi0AhjIAxiKBRjqAtgBAcICHBAuGIAEGEMYtAIYxwEYyAMYigUY6gIYrwHYAQHCAgoQIxiABBgnGIoFwgINECMYgAQYJxiKBRiLA8ICDRAAGIAEGEMYigUYiwPCAhYQLhiABBiiBRhDGKgDGIoFGIsDGJ0DwgILEAAYgAQYsQMYiwPCAg0QABiABBixAxhDGIoFwgIIEAAYgAQYsQPCAhMQIxiABBimAxgnGKgDGIoFGIsDwgIQEC4YgAQYQxjHARiKBRivAcICCBAAGIAEGIsDwgIXEC4YgAQYsQMYogUYqAMYigUYiwMYnQPCAhQQLhiABBixAxiDARioAxiaAxiLA8ICChAuGIAEGEMYigXCAhAQLhiABBjRAxhDGMcBGIoFmAMMiAYBkAYUugYGCAEQARgIugYGCAIQARgUkgcHMy42LjctMqAHgroB&sclient=gws-wiz-serp" target="_blank"><img src="/images/padmanabhan.jpg" class="card-img-top" alt="jatayu"></a>
             <div class="card-body">
               <h5 class="card-title font-bold">Padmanabhaswamy Temple</h5>
               <p class="card-text">The Padmanabhaswamy Temple is a Hindu temple, dedicated to Vishnu, in Thiruvananthapuram. Only those who profess the Hindu faith are permitted entry to the temple. It is widely considered as the world's richest Hindu temple. </p>
@@ -117,7 +122,7 @@
 
     <div class="col-12 col-md-6 col-lg-4 col-xl-3">
         <div class="card mt-5 ms-5 border-solid border-5 border-grey-500" style="width: 18rem;">
-            <img src="/images/museum.jpg" class="card-img-top" alt="jatayu">
+            <a href="https://www.google.com/search?gs_ssp=eJzj4tLP1TcwKsgxyaswYLRSNagwTjIwTUpKtkgxNLAwt0w2tTKoSDOwMEo2MjYxSTFKMzZOMvfizUssyEwtUsgtLU4tzQUAZ4YTbQ&q=napier+museum&rlz=1C1RXQR_enIN1034IN1034&oq=Napier&gs_lcrp=EgZjaHJvbWUqDQgBEC4YrwEYxwEYgAQyBggAEEUYOTINCAEQLhivARjHARiABDIHCAIQLhiABDIHCAMQABiABDIHCAQQABiABDITCAUQLhivARjHARiABBiYBRiZBTIHCAYQLhiABDIHCAcQLhiABDIHCAgQABiABDIHCAkQABiPAtIBCDMxNzRqMGo5qAIIsAIB&sourceid=chrome&ie=UTF-8" target="_blank"><img src="/images/museum.jpg" class="card-img-top" alt="jatayu"></a>
             <div class="card-body">
               <h5 class="card-title font-bold">Napier Museum</h5>
               <p class="card-text">The Napier Museum is an art and natural history museum situated in Thiruvananthapuram. The Museum is grounds to the Trivandrum Zoo, one of the oldest zoological gardens in India. The zoo was established in 1857.</p>
@@ -135,7 +140,7 @@
 
     <div class="col-12 col-md-6 col-lg-4 col-xl-3">
         <div class="card mt-5 ms-5 border-solid border-5 border-grey-500" style="width: 18rem;">
-            <img src="/images/ponmudi.jpg" class="card-img-top" alt="jatayu">
+            <a href="https://www.google.com/search?gs_ssp=eJzj4tTP1TcwKbMsLjJg9GIvyM_LLU3JBAA9ZwZV&q=ponmudi&rlz=1C1RXQR_enIN1034IN1034&oq=ponm&gs_lcrp=EgZjaHJvbWUqDAgBEC4YJxiABBiKBTIGCAAQRRg5MgwIARAuGCcYgAQYigUyFggCEC4YrwEYxwEYgAQYmAUYmQUYngUyBwgDEAAYgAQyBwgEEC4YgAQyBwgFEAAYgAQyBwgGEC4YgAQyBwgHEAAYgAQyBwgIEAAYgATSAQgzNjU0ajBqOagCCLACAQ&sourceid=chrome&ie=UTF-8" target="_blank"><img src="/images/ponmudi.jpg" class="card-img-top" alt="jatayu"></a>
             <div class="card-body">
               <h5 class="card-title font-bold">Ponmudi Station Hills</h5>
               <p class="card-text">Ponmudi is a hill station in the Peringamala gramapanchayath Trivandrum. Located 22km west of Vithura, 53km north-east of Tvm, 78km south-east of Varkala town and 69km north-east of Kovalam Beach at an altitude of 1100 m.</p>
@@ -152,7 +157,7 @@
 
     <div class="col-12 col-md-6 col-lg-4 col-xl-3">
         <div class="card mt-5 ms-5 border-solid border-5 border-grey-500" style="width: 18rem;">
-            <img src="/images/shankumugham.jpg" class="card-img-top" alt="jatayu">
+            <a href="https://www.google.com/search?gs_ssp=eJzj4tTP1TewyDXOsjRg9BIqzkjMyy7NLU3PSMxVSEpNTM4AAJWaCjM&q=shankumugham+beach&rlz=1C1RXQR_enIN1034IN1034&oq=shanku&gs_lcrp=EgZjaHJvbWUqDAgBEC4YJxiABBiKBTIGCAAQRRg5MgwIARAuGCcYgAQYigUyEggCEC4YFBivARjHARiHAhiABDIQCAMQLhivARjHARiABBiYBTIHCAQQLhiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABNIBCDMzNTVqMWo5qAIIsAIB&sourceid=chrome&ie=UTF-8" target="_blank"><img src="/images/shankumugham.jpg" class="card-img-top" alt="jatayu"></a>
             <div class="card-body">
               <h5 class="card-title font-bold">Shankumugham Beach</h5>
               <p class="card-text">Shankumugham Beach is a beach in Thiruvananthapuram district of Kerala, south India. The beach is on the western side of Thiruvananthapuram and is very close to Trivandrum International Airport. </p>
@@ -170,7 +175,7 @@
 
     <div class="col-12 col-md-6 col-lg-4 col-xl-3">
         <div class="card mt-5 ms-5 border-solid border-5 border-grey-500" style="width: 18rem;">
-            <img src="https://static.toiimg.com/photo/48681548.cms" class="card-img-top" alt="jatayu">
+            <a href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0TDcsyDNOMq80YPTizc4vS8xJzFVISk1MzgAAiisJgA&q=kovalam+beach&rlz=1C1RXQR_enIN1034IN1034&oq=kovalam&gs_lcrp=EgZjaHJvbWUqDAgBEC4YJxiABBiKBTIPCAAQIxgnGOMCGIAEGIoFMgwIARAuGCcYgAQYigUyBwgCEC4YgAQyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyFggGEC4YrwEYxwEYgAQYmAUYmgUYngUyBwgHEAAYgAQyBwgIEAAYgATSAQg2MDg3ajBqOagCALACAQ&sourceid=chrome&ie=UTF-8" target="_blank"><img src="https://static.toiimg.com/photo/48681548.cms" class="card-img-top" alt="jatayu"></a>
             <div class="card-body">
               <h5 class="card-title font-bold">Kovalam Beach</h5>
               <p class="card-text">Kovalam is the most famous beach spot of Kerala. It is located 16 km away from Thiruvananthapuram. This small and beautiful village was established as a tourist spot after the discovery of three fabulous beaches.</p>
@@ -188,7 +193,7 @@
 
     <div class="col-12 col-md-6 col-lg-4 col-xl-3">
       <div class="card mt-5 ms-5 border-solid border-5 border-grey-500" style="width: 18rem;">
-          <img src="/images/veli.jpg" class="card-img-top" alt="jatayu">
+          <a href="https://www.google.com/search?gs_ssp=eJzj4tZP1zcsSa8wSDeIN2C0UjWoME4yME1KNk6ySEpOMU82M7YyqEgzSrQ0NUtMszBLNDI3MjX2kixLzclUyEnMTlUoyS8tyiwuUSjLzMlJTE8FAJpGGJs&q=veli+lake+tourist+village&rlz=1C1RXQR_enIN1034IN1034&oq=veli&gs_lcrp=EgZjaHJvbWUqFQgCEC4YJxivARjHARiABBiKBRiOBTIGCAAQRRg5MgcIARAuGIAEMhUIAhAuGCcYrwEYxwEYgAQYigUYjgUyDAgDEC4YFBiHAhiABDIHCAQQABiABDISCAUQLhgUGK8BGMcBGIcCGIAEMg0IBhAuGK8BGMcBGIAEMg0IBxAuGK8BGMcBGIAEMgcICBAAGIAE0gEINDQwNmowajmoAgiwAgE&sourceid=chrome&ie=UTF-8" target="_blank"><img src="/images/veli.jpg" class="card-img-top" alt="jatayu"></a>
           <div class="card-body">
             <h5 class="card-title font-bold">Veli Tourist Village</h5>
             <p class="card-text">The Veli Tourist Village which lies where the Veli Lake meets the Arabian Sea provides for unique boating and picnicking opportunities. Visitors can hire pedal boats or paddleboats as per their convenience.</p>
@@ -206,7 +211,7 @@
 
     <div class="col-12 col-md-6 col-lg-4 col-xl-3">
       <div class="card mt-5 ms-5 mb-2 border-solid border-5 border-grey-500" style="width: 18rem;">
-          <img src="/images/kanakakunnu.jpg" class="card-img-top" alt="jatayu">
+          <a href="https://www.google.com/search?sca_esv=e2999e5afe90a665&rlz=1C1RXQR_enIN1034IN1034&sxsrf=ADLYWILyw-96deRbkfMHIdmBWjaXPzjjKQ:1719499847048&q=kanakakunnu+palace+photos&sa=X&ved=2ahUKEwiYkcyMhPyGAxUMyzgGHUEgC7kQ7xYoAHoECBAQAQ&biw=1920&bih=945&dpr=1" target="_blank"><img src="/images/kanakakunnu.jpg" class="card-img-top" alt="jatayu"></a>
           <div class="card-body">
             <h5 class="card-title font-bold">Kanakakkunnu Palace</h5>
             <p class="card-text">The Kanakakunnu palace located at the heart of Thiruvananthapuram city. Its proximity to a number of important tourist sites, including the Napier Museum and Trivandrum Zoo, has made it an important part of the city.</p>
