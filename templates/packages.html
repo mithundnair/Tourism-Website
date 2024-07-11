@@ -41,6 +41,12 @@
             font-size: 1.5rem;
         }
 
+        .img-thumbnail{
+          width: 80px;
+          height: 80px;
+          object-fit: cover;
+        }
+
     </style>
 </head>
 <body class="body bg-gray-100">
@@ -133,16 +139,133 @@
             <div class="modal" id="bookingModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <div class="modal-header flex flex-row items-center space-x-4">
+                      <div class="flex flex-col items-center">
+                          <a href="#" id="user1link" onclick="showUserForm('user1')"><img src="/images/user1.jpg" class="img-thumbnail mb-2" id="exampleModalLabel" alt="USER 1"></a>
+                          <p class="text-center">USER 1</p>
+                      </div>
+                      <div class="flex flex-col items-center">
+                          <a href="#" id="user2link" onclick="showUserForm('user2')"><img src="/images/user1.jpg" class="img-thumbnail mb-2" id="exampleModalLabel2" alt="USER 2"></a>
+                          <p class="text-center">USER 2</p>
+                      </div>
+                      <div class="flex flex-col items-center">
+                          <a href="#" id="user3link" onclick="showUserForm('user3')"><img src="/images/user1.jpg" class="img-thumbnail mb-2" id="exampleModalLabel2" alt="USER 3"></a>
+                          <p class="text-center">USER 3</p>
+                      </div>
+                      <div class="flex flex-col items-center">
+                          <a href="#" id="childrenlink" onclick="showChildrenForm()"><img src="/images/child1.png" class="img-thumbnail mb-2" id="exampleModalLabel2" alt="Children"></a>
+                          <p class="text-center">Children</p>
+                      </div>
+
+                      <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                       
+                      <form id="userform" class="hidden">
+                        <h3 class="title font-bold">Fill Your Details</h3>
+                      <hr class="font-bold bg-white">
+                        <div class="row">
+                          <div class="col-md-4 mb-3">
+                              <label for="name" class="form-label font-bold">First Name</label>
+                              <input type="text" class="form-control" id="Fname" placeholder="Enter your name">
+                          </div>
+                          <div class="col-md-4 mb-3">
+                              <label for="email" class="form-label font-bold">Last Name</label>
+                              <input type="text" class="form-control" id="Lname" placeholder="Enter your surname">
+                          </div>
+                          <div class="col-md-4 mb-3">
+                              <label for="message" class="form-label font-bold">Phone No</label>
+                              <input type="tel" class="form-control" id="message" rows="1" placeholder="Enter your No"></input>
+                          </div>
+                          <div class="col-md-4 mb-3">
+                              <label for="message" class="form-label font-bold">Email</label>
+                              <input type="email" class="form-control" id="email" rows="1" placeholder="Enter your mail id"></input>
+                          </div>
+                          <div class="col-md-4 mb-3">
+                              <label for="message" class="form-label font-bold">DOB</label>
+                              <input type="date" class="form-control" id="dob" rows="1" placeholder="Enter your No"></input>
+                          </div>
+                          <div class="col-md-4 mb-3">
+                              <label for="message" class="form-label font-bold">Passport Number</label>
+                              <input type="text" class="form-control" id="passport" rows="1" placeholder="Enter your No"></input>
+                          </div>
+                          <div class="col-md-4 mb-3">
+                              <label for="message" class="form-label font-bold">Passport Expiry</label>
+                              <input type="text" class="form-control" id="passexpiry" rows="1" placeholder="Enter expiry date"></input>
+                          </div>
+                          <div class="col-md-4 mb-3">
+                              <label for="message" class="form-label font-bold">Adhaar Number</label>
+                              <input type="text" class="form-control" id="adhaar" rows="1" placeholder="Enter your No"></input>
+                          </div>
+                      </div>
+                      </form>
+                      
+                      <form id="childform" class="hidden">
+                        <h3 class="title font-bold" id="under">Children under 10yrs(IF ANY*)</h3>
+                        <hr>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                          <div class="mb-3">
+                              <label for="Fname" class="form-label font-bold">First Name</label>
+                              <input type="text" class="form-control" id="Fname" placeholder="Enter your name">
+                          </div>
+                          <div class="mb-3">
+                              <label for="Lname" class="form-label font-bold">Last Name</label>
+                              <input type="text" class="form-control" id="Lname" placeholder="Enter your surname">
+                          </div>
+                          <div class="mb-3">
+                              <label for="dob" class="form-label font-bold">DOB</label>
+                              <input type="date" class="form-control" id="dob" placeholder="Enter your date of birth">
+                          </div>
+                          <div class="mb-3">
+                              <label for="age" class="form-label font-bold">Age</label>
+                              <input type="text" class="form-control" id="dob" placeholder="Enter your Age">
+                          </div>
+                      </div>
+                      </form>
+
+                      <!-- <form id="forms">
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <label for="name" class="form-label font-bold">First Name</label>
+                                <input type="text" class="form-control" id="Fname" placeholder="Enter your name">
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="email" class="form-label font-bold">Last Name</label>
+                                <input type="text" class="form-control" id="Lname" placeholder="Enter your surname">
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="message" class="form-label font-bold">Phone No</label>
+                                <input type="tel" class="form-control" id="message" rows="1" placeholder="Enter your No"></input>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="message" class="form-label font-bold">Email</label>
+                                <input type="email" class="form-control" id="email" rows="1" placeholder="Enter your mail id"></input>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="message" class="form-label font-bold">DOB</label>
+                                <input type="date" class="form-control" id="dob" rows="1" placeholder="Enter your No"></input>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="message" class="form-label font-bold">Passport Number</label>
+                                <input type="text" class="form-control" id="passport" rows="1" placeholder="Enter your No"></input>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="message" class="form-label font-bold">Passport Expiry</label>
+                                <input type="text" class="form-control" id="passexpiry" rows="1" placeholder="Enter expiry date"></input>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="message" class="form-label font-bold">Adhaar Number</label>
+                                <input type="text" class="form-control" id="adhaar" rows="1" placeholder="Enter your No"></input>
+                            </div>
+                        </div>
+                    </form> -->
                     </div>
+                    
                     <div class="modal-footer">
+                      
                       <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
+                      <button type="button" class="btn btn-primary">Confirm Booking</button>
                     </div>
                   </div>
                 </div>
